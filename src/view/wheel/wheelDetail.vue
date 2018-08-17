@@ -1,9 +1,9 @@
 <template>
     <div class="wheelDetail">
         <mt-header fixed title="轮回明细">
-            <router-link to="/" slot="left">
+            <div  slot="left">
                 <mt-button icon="back"></mt-button>
-            </router-link>
+            </div>
         </mt-header>
         <div class="mt40">
             <div class="iconbox">

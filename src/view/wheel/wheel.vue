@@ -4,8 +4,8 @@
         <div class="mt40 mb55">
             <div class="iconbox">
                 <ul>
-                    <li class="flex between alcenter" v-for="(item,index) in iconList">
-                        <router-link :to='{name:"wheelDetail"}'>
+                    <li class="flex between alcenter" v-for="(item,index) in iconList" @click="go">
+                        <!-- <router-link :to='{name:"wheelDetail"}'> -->
                             <div class="flex">
                                 <div class="icon-pic mt5">
                                     <img :src="item.pic" alt="">
@@ -19,7 +19,7 @@
                             <div class="gold ft14">
                                 <span>{{item.code}}</span>
                             </div>
-                        </router-link>
+                        <!-- </router-link> -->
                     </li>
                 </ul>
             </div>
@@ -50,6 +50,11 @@ export default {
     beforeCreate () {
          document.querySelector('body').setAttribute('style', 'background-color:#111419')
     },
+    methods:{
+        go(){
+            this.$router.push({name:'wheelDetail'})
+        }
+    }
 }
 </script>
 <style lang="scss" scoped>

@@ -50,7 +50,7 @@ input{border:0;outline:0;}
 .posRelt{position: relative;}
 .abstrot{position: absolute;}
 .mint-header{background-color: #111111;color: #f1cd78;font-size: 18px;}
-
+.linerColor{background: linear-gradient(to bottom, #ae7b27, #faf0bb,#ae7b27);-webkit-background-clip: text;color: transparent;}
 
 
 

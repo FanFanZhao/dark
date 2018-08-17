@@ -24,7 +24,7 @@ export default new Router({
       component:home,
       children:[
         {
-          path: 'wheel',
+          path: '/wheel',
           name: 'wheel',
           component: wheel
         },
