@@ -5,24 +5,26 @@
             <div class="iconbox">
                 <ul>
                     <li class="flex between alcenter" v-for="(item,index) in iconList">
-                        <div class="flex">
-                            <div class="icon-pic mt5">
-                                <img :src="item.pic" alt="">
+                        <router-link :to='{name:"wheelDetail"}'>
+                            <div class="flex">
+                                <div class="icon-pic mt5">
+                                    <img :src="item.pic" alt="">
+                                </div>
+                                <div class="ml20">
+                                    <p class="gold ft14">{{item.title}}</p>
+                                    <p class="gray mt5">目标金额：{{item.goal}}</p>
+                                    <p class="gray mt5">剩余金额：{{item.residue}}</p>
+                                </div>
                             </div>
-                            <div class="ml20">
-                                <p class="gold ft14">{{item.title}}</p>
-                                <p class="gray mt5">目标金额：{{item.goal}}</p>
-                                <p class="gray mt5">剩余金额：{{item.residue}}</p>
+                            <div class="gold ft14">
+                                <span>{{item.code}}</span>
                             </div>
-                        </div>
-                        <div class="gold ft14">
-                            <span>{{item.code}}</span>
-                        </div>
+                        </router-link>
                     </li>
                 </ul>
             </div>
         </div>
-        <tabBar></tabBar>
+        <!-- <tabBar></tabBar> -->
     </div>
 </template>
 <script>

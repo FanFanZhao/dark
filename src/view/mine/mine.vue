@@ -63,7 +63,7 @@ export default {
         }
         .assets{
             width: 100%;
-            background: url(../assets/images/walletbg.png) no-repeat;
+            background: url(../../assets/images/walletbg.png) no-repeat;
             background-size: cover;
             color:#ac7b38;
             border-radius: 8px;
